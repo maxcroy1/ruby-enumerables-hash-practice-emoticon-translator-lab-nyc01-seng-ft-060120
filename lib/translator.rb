@@ -37,4 +37,6 @@ def get_english_meaning(path, emoticon)
     if dictionary[key][:japanese] == emoticon
       dictionary[key][:english]
     end
+  end
+  binding.pry
 end
