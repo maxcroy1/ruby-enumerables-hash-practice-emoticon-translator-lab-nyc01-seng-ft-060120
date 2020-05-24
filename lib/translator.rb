@@ -39,4 +39,5 @@ def get_english_meaning(path, emoticon)
       translation = key
     end
   end
+  translation
 end
