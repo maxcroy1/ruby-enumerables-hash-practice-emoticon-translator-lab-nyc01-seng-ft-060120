@@ -36,4 +36,5 @@ def get_english_meaning(path, emoticon)
   translation = data.map do |key, value|
     if dictionary[key][:japanese] == emoticon
       dictionary[key][:english]
+    end
 end
