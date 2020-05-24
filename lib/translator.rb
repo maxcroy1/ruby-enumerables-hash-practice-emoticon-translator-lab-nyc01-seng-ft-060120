@@ -36,7 +36,7 @@ def get_english_meaning(path, emoticon)
   translation = ""
   dictionary.each do |key, value|
     if dictionary[key][:japanese] == emoticon
-      dictionary[key][:english]
+      translation = dictionary[key][:english]
     end
   end
   binding.pry
