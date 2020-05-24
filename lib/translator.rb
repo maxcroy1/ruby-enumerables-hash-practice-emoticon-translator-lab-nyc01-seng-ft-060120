@@ -33,7 +33,7 @@ end
 def get_english_meaning(path, emoticon)
   # code goes here
   dictionary = load_library(path)
-  translation = dictionary.each do |key, value|
+  dictionary.each do |key, value|
     if dictionary[key][:japanese] == emoticon
       dictionary[key][:english]
     end
