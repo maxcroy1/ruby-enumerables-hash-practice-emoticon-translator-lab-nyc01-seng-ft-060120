@@ -22,9 +22,9 @@ def get_japanese_emoticon(path, emoticon)
   dictionary.each do |key, value|
     if dictionary[key][:english] == emoticon
       translation = dictionary[key][:japanese]
-    else
-      translation = "Sorry, that emoticon was not found"
     end
+    if translation == ""
+      translation = "Sorry, that emoticon was not found"
   end
   translation
 end
