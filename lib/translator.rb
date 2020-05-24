@@ -38,7 +38,8 @@ def get_english_meaning(path, emoticon)
     if dictionary[key][:japanese] == emoticon
       translation = dictionary[key][:english]
     end
-    if
+    if translation = ""
+      translation = "Sorry, that emoticon was not found"
   end
   binding.pry
 end
