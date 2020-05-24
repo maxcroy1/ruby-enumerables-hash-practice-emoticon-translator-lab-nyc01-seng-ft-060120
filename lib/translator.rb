@@ -24,7 +24,6 @@ def get_japanese_emoticon(path, emoticon)
       translation = dictionary[key][:japanese]
     end
   end
-  binding.pry
   translation
 end
 
