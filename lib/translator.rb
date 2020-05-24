@@ -40,6 +40,7 @@ def get_english_meaning(path, emoticon)
     end
     if translation = ""
       translation = "Sorry, that emoticon was not found"
+    end
   end
   binding.pry
 end
